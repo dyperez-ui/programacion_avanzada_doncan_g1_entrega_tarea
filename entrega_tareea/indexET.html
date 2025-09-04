@@ -1,48 +1,76 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>pagina super increible de recetas de cocina</title>
-<link rel="stylesheet" href="estilosEt.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Super Bacanas con el Mercado de Siempre</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<h1> recetas super bacanas con el mercado de siempre</h1>
-<p> en esta pagina se podran encontrar 4 recetas con las cuales podras sorprender a aquellos que amas con una cena increible</p>
-<p> lo mejor de todo es que no necesitaras ingreidentes caros solo seguir las instrucciones y hasta el mas despistado puede cocinar</p>
-<br>
+    <div class="container">
+        <header>
+            <h1>Recetas Super Bacanas con el Mercado de Siempre</h1>
+            <p>En esta página podrás encontrar 4 recetas con las cuales podrás sorprender a aquellos que amas con una cena increíble.</p>
+            <p>Lo mejor de todo es que no necesitarás ingredientes caros, solo seguir las instrucciones y hasta el más despistado puede cocinar.</p>
+        </header>
 
-<img src="https://media.gettyimages.com/id/1829241109/es/foto/disfrutando-de-un-brunch-juntos.jpg?s=2048x2048&w=gi&k=20&c=XXN4uU69jmDFQxdDMfJtR7SJ_GZTdV6vBvQYECq8wP8=" alt="recetas" width="400">
-<br>
+        <div class="hero-image">
+            <img src="https://media.gettyimages.com/id/1829241109/es/foto/disfrutando-de-un-brunch-juntos.jpg?s=2048x2048&w=gi&k=20&c=XXN4uU69jmDFQxdDMfJtR7SJ_GZTdV6vBvQYECq8wP8=" 
+                 alt="Personas disfrutando de una comida juntos" 
+                 width="400">
+        </div>
 
-<ol>
-    <li>
-        lo mein de vegetales
-        <a href="receta1.html">
-            <br>
-            ver receta</a>
-    </li>
-    <li>
-        arroz especial chino
-        <a href="receta2.html">
-            <br>
-            ver receta</a>
-    </li>
-    <li>
-        hash browns
-        <a href="receta3.html">
-            <br>
-            ver receta</a>
-    </li>
-    <li>
-        tortilla española
-        <a href="receta4.html">
-            <br>
-            ver receta</a>
-    </li>
-    
-</ol>
-<p> todas estas recetas fueron sacadas del libro</p>
+        <section class="recipes-section">
+            <h2>Nuestras Recetas</h2>
+            
+            <div class="recipe-grid">
+                <!-- Fila 1 - 2 recetas -->
+                <div class="recipe-row">
+                    <!-- Receta 1 -->
+                    <article class="recipe-card">
+                        <h3>Lo Mein de Vegetales</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPxO0CwRYP8x2TsxxnSg8Q8q9KHF_TOI56Q&s" 
+                             alt="Plato de Lo Mein de vegetales">
+                        <p>Deliciosos fideos salteados con verduras frescas en salsa asiática.</p>
+                        <a href="receta1.html" class="recipe-btn">Ver receta completa</a>
+                    </article>
+                    
+                    <!-- Receta 2 -->
+                    <article class="recipe-card">
+                        <h3>Arroz Especial Chino</h3>
+                        <img src="img/arroz chino.jpg">
+                        <p>Arroz salteado con vegetales, proteínas y sabores tradicionales orientales.</p>
+                        <a href="receta2.html" class="recipe-btn">Ver receta completa</a>
+                    </article>
+                </div>
+                
+                <!-- Fila 2 - 2 recetas -->
+                <div class="recipe-row">
+                    <!-- Receta 3 -->
+                    <article class="recipe-card">
+                        <h3>Hash Browns</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThhaRu74eytxe68yyDCrxPv5LEy5SmgbXNcQ&s" 
+                             alt="Hash Browns crujientes">
+                        <p>Crujientes tortitas de papa ideales para desayunos y acompañamientos.</p>
+                        <a href="receta3.html" class="recipe-btn">Ver receta completa</a>
+                    </article>
+                    
+                    <!-- Receta 4 -->
+                    <article class="recipe-card">
+                        <h3>Tortilla Española</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3XnouZa-IrtZm9UmiSplw6LoNAoTfzO74w&s" 
+                             alt="Tortilla española tradicional">
+                        <p>Clásica tortilla de patatas española, perfecta para cualquier ocasión.</p>
+                        <a href="receta4.html" class="recipe-btn">Ver receta completa</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Todas estas recetas fueron sacadas del libro "Cocina Internacional con Ingredientes Locales"</p>
+        </footer>
+    </div>
 </body>
 </html>

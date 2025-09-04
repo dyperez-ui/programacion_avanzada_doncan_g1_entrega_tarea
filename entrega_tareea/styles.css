@@ -1,0 +1,301 @@
+/* ===== ESTILOS GENERALES (para todas las páginas) ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #ff7b54;
+    margin: 1.5rem 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 2px solid #ffb26b;
+    padding-bottom: 10px;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-left: 4px solid #ff7b54;
+    padding-left: 10px;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #ff7b54;
+}
+
+/* Párrafos */
+p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+/* Listas */
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    line-height: 1.8;
+}
+
+/* Formularios */
+form {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    color: #ff7b54;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"],
+button {
+    background-color: #ff7b54;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #ff5252;
+}
+
+/* Enlaces */
+a {
+    color: #ff7b54;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #ff5252;
+    text-decoration: underline;
+}
+
+/* Navegación */
+nav {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+nav ol {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0.5rem 1rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    color: #7f8c8d;
+}
+
+/* ===== ESTILOS ESPECÍFICOS PARA INDEX ===== */
+.hero-image {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.recipes-section {
+    margin: 40px 0;
+}
+
+.recipes-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recipe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.recipe-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.recipe-card {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recipe-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px auto;
+}
+
+.recipe-btn {
+    display: inline-block;
+    background-color: #ff7b54;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-btn:hover {
+    background-color: #ff5252;
+}
+
+/* ===== ESTILOS ESPECÍFICOS PARA PÁGINAS DE RECETAS ===== */
+.recipe-instructions {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+}
+
+.recipe-instructions li {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+}
+
+.notes-extra {
+    background-color: #fff4e6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #ffb26b;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .recipe-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .recipe-card {
+        max-width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    nav ol {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul, ol {
+        padding-left: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .container {
+        padding: 1rem;
+    }
+}

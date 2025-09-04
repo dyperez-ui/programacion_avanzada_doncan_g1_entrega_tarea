@@ -1,106 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Lo mein de vegetales</title>
-        <link rel="stylesheet" href="estilosEt.css">
-    </head>
-    <body>  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Mein de Vegetales</title>
+    <link rel="stylesheet" href="styles.css">
    
-        <h2>Presentando al: Lo Mein De vegetales</h2>
-        <p>
-            El Lo Mein de vegetales es un clásico de la gastronomía asiática que combina fideos salteados con una mezcla fresca y colorida de verduras. Esta receta, además de ser ligera y nutritiva, 
-            resalta por su equilibrio de sabores y su versatilidad, ya que puede adaptarse fácilmente a distintos gustos y estilos de vida
-        </p>
-        
-       
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPxO0CwRYP8x2TsxxnSg8Q8q9KHF_TOI56Q&s"
-            alt="lo mein de vegetales" 
-            width="400">
-            <h2>Ingredientes</h2>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lo Mein de Vegetales</h1>
+            <p>El Lo Mein de vegetales es un clásico de la gastronomía asiática que combina fideos salteados con una mezcla fresca y colorida de verduras. Esta receta, además de ser ligera y nutritiva, resalta por su equilibrio de sabores y su versatilidad.</p>
+        </header>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAPxO0CwRYP8x2TsxxnSg8Q8q9KHF_TOI56Q&s" alt="Lo Mein de vegetales">
+
+        <h2>Ingredientes</h2>
         <ul>
-            <li>
-                200 gramos de spaghetti
+            <li>200 gramos de spaghetti</li>
+            <li>1 zanahoria grande picada en bastones</li>
+            <li>1 taza de champiñones cortados</li>
+            <li>1 taza de raíces chinas</li>
+            <li>1/2 taza de salsa soya</li>
+        </ul>
 
-            </li>
-            <li>
-                1 zanahoria grande picada en bastones
-                <br>
-            </li>
-               <li>
-                1 taza de chamipoñones cortados
-                <br>
-            </li>
-               <li>
-                1 taza de raices chinas
-                <br>
-            </li>
-               <li>
-                1/2 taza de salsa soya
-                <br>
-            </li>
+        <h2>Preparación</h2>
+        <ol>
+            <li>Hervir litro y medio de agua en una olla con sal al gusto.</li>
+            <li>Cuando el agua esté hirviendo, agregar los spaghetti y cocinar por 8 minutos o al término que prefieras.</li>
+            <li>Después del tiempo de cocción, escurrir y reservar.</li>
+            <li>En otro medio litro de agua, cocinar la zanahoria, raíces chinas y los champiñones durante aproximadamente 5 minutos.</li>
+            <li>Saltear todos los ingredientes juntos en un sartén con un poco de aceite y agregar la salsa de soya.</li>
+            <li>Cocinar todo junto por 5 minutos más y servir.</li>
+        </ol>
 
-            <h2>Preparacion</h2>
-            <li>
-                hervir litro y medio de agua en la olla de tu eleccion con sal al gustos
-                <br>
-            </li>
-            <li>
-                cuando el agua este hirviendo agregar los spaghetti y cocinar por 8 minutos o al termino que te guste
-                <br>
-            </li>
-            <li>
-                despues de el tiempo de coccion escurrir y reservar 
-                <br>
-            </li>
-            <li>
-                hervir litro y medio de agua en la olla de tu eleccion con sal al gustos
-                <br>
-            </li>
-            <li>
-                en otro medio de litro de agua cocinaremos la zanahoria,raices chinas y los chamipoñones el tiempo de coccion dependera de tu gusto pero generealmento es de 5 minutos
-                <br>
-            </li>
-            <li>
-                despues de haber cocinado todos los ingredientes pasaremos a saltearlos todos juntos en un sarten con un poco de aceite y agregaremos la salsa de soya
-                <br>
-            </li>
-            <li>
-                despues de cocinar todo junto por 5 minutos mas esatara listo para servir y disfrutar
-                <br>
-            </li>
-            <h2>Notas Extra</h2>
-            <p>esta receta es sumamente versatil asi que si deseas agregarle otras verduras o incluso carnes como la de cerdo,res o pollo estas le daran un toque diferente a la comida </p>
-            <br>
-               <label> Comparte como te quedo tu receta :D</label>
-       <input type="file" name="muestranos como te quedo :D">
-       <form action="#" method="get">
-        <label for="nombreInput">comparte tu opinion sobre la receta:</label>
-        <input type="text" id="opinion" name="opinion" maxlength="1000">
-        <br>
+        <h2>Notas Extra</h2>
+        <p>Esta receta es sumamente versátil. Si deseas agregarle otras verduras o incluso carnes como cerdo, res o pollo, le darán un toque diferente a la comida.</p>
+
+        <div class="compartir-receta">
+            <h3>Comparte tu experiencia</h3>
+            <form action="#" method="post">
+                <label for="foto-receta">Sube una foto de tu receta:</label>
+                <input type="file" id="foto-receta" name="foto-receta" accept="image/*">
+                
+                <label for="opinion">Comparte tu opinión sobre la receta:</label>
+                <textarea id="opinion" name="opinion" maxlength="1000" rows="4" placeholder="¿Qué te pareció esta receta?"></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <nav>
             <ol>
-                <li>
-                    <a href="indexET.html">volver al inicio</a>
-                      <br>
-                </li>
-                 <li>
-                     <a href="receta2.html">ver siguiente receta</a>
-                      <br>
-                </li>
-                   <li>
-                     <a href="receta3.html">ver siguiente receta</a>
-                      <br>
-                </li>
-                   <li>
-                     <a href="receta4.html">ver siguiente receta</a>
-                      <br>
-                </li>
+                <li><a href="indexET.html">Volver al inicio</a></li>
+                <li><a href="receta2.html">Ver siguiente receta: Arroz Especial Chino</a></li>
+                <li><a href="receta3.html">Ver receta: Hash Browns</a></li>
+                <li><a href="receta4.html">Ver receta: Tortilla Española</a></li>
             </ol>
-         <br>
-       
-
-
-    </body>
-      
-        
+        </nav>
+    </div>
+</body>
 </html>
